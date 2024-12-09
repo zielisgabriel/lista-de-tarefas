@@ -125,7 +125,7 @@ main{
         }
 
         &>p{
-            padding-top: 50px;
+            padding-top: 60px;
             align-self: center;
             height: inherit;
             font: var(--paragraph);
