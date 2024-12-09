@@ -47,6 +47,10 @@ a{
     color: inherit;
 }
 
+li{
+    list-style: none;
+}
+
 .hide{
     opacity: 0;
 }

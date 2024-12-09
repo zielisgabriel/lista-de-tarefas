@@ -123,5 +123,28 @@ main{
                 }
             }
         }
+
+        &>p{
+            padding-top: 50px;
+            align-self: center;
+            height: inherit;
+            font: var(--paragraph);
+            color: var(--content-tertiary);
+        }
     }
+}
+
+#alert{
+    background-color: var(--color-danger);
+    color: var(--always-white);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 50px;
+    border-radius: 15px;
+    bottom: 20px;
+    display: block;
+    opacity: 0%;
+
+    transition: .3s;
 }

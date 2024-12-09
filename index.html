@@ -31,73 +31,18 @@
 
             <h1>Compras da semana</h1>
 
-            <form>
-                <input type="text" placeholder="Adicione um novo item" required class="border-r">
+            <form id="submit-form">
+                <input type="text" placeholder="Adicione um novo item" required class="border-r" id="add-item">
                 <button type="submit" class="border-r">Adicionar item</button>
             </form>
 
-            <div class="list">
-                <form class="item border-r">
-                    <div>
-                        <div class="check-square">
-                            <i class="fa-solid fa-check hide" id="check"></i>
-                        </div>
-                        <p>Teste</p>
-                    </div>
+            <ul class="list">
+                
+            </ul>
 
-                    <button type="submit" class="trash-button">
-                        <i class="fa-regular fa-trash-can trash-icon"></i>
-                    </button>
-                </form>
-                <div class="item">
-                    <div>
-                        <div class="check-square">
-                            <i class="fa-solid fa-check" id="check"></i>
-                        </div>
-    
-                        <p>Teste</p>
-                    </div>
-
-                    <i class="fa-regular fa-trash-can" id="trash"></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <div class="check-square">
-                            <i class="fa-solid fa-check" id="check"></i>
-                        </div>
-    
-                        <p>Teste</p>
-                    </div>
-
-                    <i class="fa-regular fa-trash-can" id="trash"></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <div class="check-square">
-                            <i class="fa-solid fa-check" id="check"></i>
-                        </div>
-    
-                        <p>Teste</p>
-                    </div>
-
-                    <i class="fa-regular fa-trash-can" id="trash"></i>
-                </div>
-                <div class="item">
-                    <div>
-                        <div class="check-square">
-                            <i class="fa-solid fa-check" id="check"></i>
-                        </div>
-    
-                        <p>Teste</p>
-                    </div>
-
-                    <i class="fa-regular fa-trash-can" id="trash"></i>
-                </div>
-            </div>
-
-            <div class="alert">
+            <div class="alert" id="alert">
                 <i class="fa-solid fa-circle-exclamation"></i>
-                <p>O item foi removido da lista</p>
+                <span>O item foi removido da lista</span>
             </div>
         </main>
     </div>
