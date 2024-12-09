@@ -1,12 +1,10 @@
+// Variáveis para a Lista dos items (ul)
 const ul = document.querySelector('.list')
-
 const alertList = document.querySelector('ul .alert-list')
-
 
 // PEGAR VALOR DO INPUT
 const addItem = document.getElementById('add-item')
 addItem.addEventListener('input', () => {
-    // console.log(addItem.value)
 })
 
 // ADICIONAR NA LISTA
@@ -18,12 +16,12 @@ submitForm.addEventListener('submit', (event) => {
     const li = document.createElement('li')
     li.classList.add('item')
     li.classList.add('border-r')
-
     const div = document.createElement('div')
     const p = document.createElement('p')
     p.textContent = addItem.value
     div.append(p)
 
+    // CRIANDO UM ITEM
     const checkSquare = document.createElement('div')
     checkSquare.classList.add('check-square')
     const iconCheck = document.createElement('i')
@@ -38,7 +36,6 @@ submitForm.addEventListener('submit', (event) => {
         iconCheck.classList.toggle('hide')
     })
     
-
     // Botão para remover o item
     const btnRemove = document.createElement('button')
     btnRemove.classList.add('trash-button')
@@ -57,6 +54,7 @@ submitForm.addEventListener('submit', (event) => {
             alertMessage.style.opacity = "0%" 
         }, 2500)
 
+        // Verificação para saber se tem mais de um item na lista
         if(ul.childElementCount > 1){
             alertList.classList.add('hide-full')
         } else {
@@ -68,11 +66,10 @@ submitForm.addEventListener('submit', (event) => {
     li.prepend(div)
     ul.prepend(li)
 
+    // Verificação para saber se tem mais de um item na lista
     if(ul.childElementCount > 1){
         alertList.classList.add('hide-full')
     } else {
         alertList.classList.remove('hide-full')
     }
-
-    console.log(ul.childElementCount)
 })
