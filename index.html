@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist | Lista de Compras</title>
 
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +22,84 @@
         <header>
             <img src="assets/images/logo.png" alt="">
         </header>
+
+        <main>
+            <a href="">
+                <i class="fa-solid fa-arrow-left" id="arrow-left"></i>
+                <span>Voltar</span>
+            </a>
+
+            <h1>Compras da semana</h1>
+
+            <form>
+                <input type="text" placeholder="Adicione um novo item" required class="border-r">
+                <button type="submit" class="border-r">Adicionar item</button>
+            </form>
+
+            <div class="list">
+                <form class="item border-r">
+                    <div>
+                        <div class="check-square">
+                            <i class="fa-solid fa-check hide" id="check"></i>
+                        </div>
+                        <p>Teste</p>
+                    </div>
+
+                    <button type="submit" class="trash-button">
+                        <i class="fa-regular fa-trash-can trash-icon"></i>
+                    </button>
+                </form>
+                <div class="item">
+                    <div>
+                        <div class="check-square">
+                            <i class="fa-solid fa-check" id="check"></i>
+                        </div>
+    
+                        <p>Teste</p>
+                    </div>
+
+                    <i class="fa-regular fa-trash-can" id="trash"></i>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="check-square">
+                            <i class="fa-solid fa-check" id="check"></i>
+                        </div>
+    
+                        <p>Teste</p>
+                    </div>
+
+                    <i class="fa-regular fa-trash-can" id="trash"></i>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="check-square">
+                            <i class="fa-solid fa-check" id="check"></i>
+                        </div>
+    
+                        <p>Teste</p>
+                    </div>
+
+                    <i class="fa-regular fa-trash-can" id="trash"></i>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="check-square">
+                            <i class="fa-solid fa-check" id="check"></i>
+                        </div>
+    
+                        <p>Teste</p>
+                    </div>
+
+                    <i class="fa-regular fa-trash-can" id="trash"></i>
+                </div>
+            </div>
+
+            <div class="alert">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>O item foi removido da lista</p>
+            </div>
+        </main>
     </div>
 
     <script src="js/script.js"></script>
