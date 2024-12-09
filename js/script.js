@@ -1,5 +1,6 @@
 const ul = document.querySelector('.list')
 
+const alertList = document.querySelector('ul .alert-list')
 
 
 // PEGAR VALOR DO INPUT
@@ -55,17 +56,23 @@ submitForm.addEventListener('submit', (event) => {
         setTimeout(() => {
             alertMessage.style.opacity = "0%" 
         }, 2500)
+
+        if(ul.childElementCount > 1){
+            alertList.classList.add('hide-full')
+        } else {
+            alertList.classList.remove('hide-full')
+        }
     })
 
-
     checkSquare.append(iconCheck)
-
     li.prepend(div)
-
     ul.prepend(li)
 
-    
+    if(ul.childElementCount > 1){
+        alertList.classList.add('hide-full')
+    } else {
+        alertList.classList.remove('hide-full')
+    }
+
+    console.log(ul.childElementCount)
 })
-
-
-// SISTEMA PARA APAGAR UMA TAREFA

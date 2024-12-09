@@ -74,7 +74,7 @@ main{
         }
 
         &::-webkit-scrollbar-track{
-            background: #e2e2e2;
+            background: transparent;
             border-radius: 10px;
         }
 

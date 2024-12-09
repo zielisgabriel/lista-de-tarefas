@@ -1,3 +1,11 @@
 .border-r{
     border-radius: 12px;
 }
+
+.hide{
+    opacity: 0;
+}
+
+.hide-full{
+    display: none;
+}
