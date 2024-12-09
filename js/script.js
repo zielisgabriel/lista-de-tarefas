@@ -72,4 +72,7 @@ submitForm.addEventListener('submit', (event) => {
     } else {
         alertList.classList.remove('hide-full')
     }
+
+    // Deixar o input em branco assim que adicionar na lista
+    addItem.value = ""
 })
